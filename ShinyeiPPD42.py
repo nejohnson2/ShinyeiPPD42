@@ -23,7 +23,7 @@ import RPi.GPIO as GPIO
 import time
 
 __author__ = "Nicholas Johnson <nejohnson2@gmail.com>"
-__copyright__ = "Copyright (C) 2004 Nicholas Johnson"
+__copyright__ = "Copyright (C) 2016 Nicholas Johnson"
 __license__ = "MIT"
 __version__ = "v1.0"
 

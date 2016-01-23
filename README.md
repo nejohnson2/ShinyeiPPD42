@@ -1,5 +1,5 @@
-# ShinyeiPPD42
-Python module to use the ShinyeiPPD42 on a Raspberry Pi
+# ShinyeiPPD42 Python Module
+Python module to use the ShinyeiPPD42 dust particle sensor on a Raspberry Pi
 
 ## Usage
 
@@ -15,7 +15,7 @@ while True:
 GPIO.cleanup()	
 ```
 
-## Credit
+## Credits
 The code is largely derived from the [work by Chris Nafis ](http://www.howmuchsnow.com/arduino/airquality/grovedust/).
 
 # MIT License

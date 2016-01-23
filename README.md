@@ -1,9 +1,9 @@
 # ShinyeiPPD42
 Python module to use the ShinyeiPPD42 on a Raspberry Pi
 
-## Use
+## Usage
 
-```
+```python
 from ShinyeiPPD42 import Shinyei
 
 GPIO.setmode(GPIO.BCM)  
@@ -13,13 +13,12 @@ while True:
   print t.read(30)      # supply integration time in seconds
 
 GPIO.cleanup()	
-  
 ```
 
 ## Credit
-This code is largely derived from the [work by Chris Nafis ](http://www.howmuchsnow.com/arduino/airquality/grovedust/).
+The code is largely derived from the [work by Chris Nafis ](http://www.howmuchsnow.com/arduino/airquality/grovedust/).
 
-# MIT LICENSE
+# MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

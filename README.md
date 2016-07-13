@@ -14,6 +14,16 @@ while True:
 
 GPIO.cleanup()	
 ```
+## About the ShinyeiPPD42
+
+Connector:
+Ground
+Output (P2)
+Power (5v)
+Output (P1)
+Threshold
+
+P1 measures sets a 1v threshold which measures particles largeer than 1 micron.  P2 measures particles larger than 2.5 microns.  The detectable range of the sensor is approximately 0 - 8000 pcs/0.01cf.
 
 ## Credits
 The code is largely derived from the [work by Chris Nafis ](http://www.howmuchsnow.com/arduino/airquality/grovedust/).

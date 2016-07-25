@@ -4,6 +4,7 @@ Python module to use the ShinyeiPPD42 dust particle sensor on a Raspberry Pi.  T
 ## Usage
 
 ```python
+# RPi.GPIO version
 from ShinyeiPPD42 import Shinyei
 
 GPIO.setmode(GPIO.BCM)  
@@ -14,6 +15,21 @@ while True:
 
 GPIO.cleanup()	
 ```
+
+```python
+# pigpio version
+pi = pigpio.pi() # connect to pi
+s = Shinyei(pi, 23)
+while True:
+	time.sleep(5) # use 30 for properly calibrated reading
+
+	g, r, c = s.read()
+
+	print "GPIO=%s Ratio=%s Concenration=%s pcs per 0.01 cubic foot" %(g, r, int(c))
+
+pi.stop() # Disconnect from pi
+```
+
 ## About the ShinyeiPPD42
 
 ```

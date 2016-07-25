@@ -17,6 +17,8 @@ GPIO.cleanup()
 ## About the ShinyeiPPD42
 
 ```
+Shinyei Pin Output
+------------------
 Ground
 Output (P2)
 Input (+5VDC, 90mA)

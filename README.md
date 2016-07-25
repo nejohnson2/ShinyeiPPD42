@@ -1,5 +1,5 @@
 # ShinyeiPPD42 Python Module
-Python module to use the ShinyeiPPD42 dust particle sensor on a Raspberry Pi
+Python module to use the ShinyeiPPD42 dust particle sensor on a Raspberry Pi.  The module is still in development.  There is a second module using the [pigpio](http://abyz.co.uk/rpi/pigpio/examples.html) library though the code does not yet implement dual pin usage.
 
 ## Usage
 

@@ -16,18 +16,22 @@ GPIO.cleanup()
 ```
 ## About the ShinyeiPPD42
 
+```
 Ground
 Output (P2)
 Input (+5VDC, 90mA)
 Output (P1)
 Threshold
+```
 
 P1 measures particles largeer than 1 micron and P2 measures particles larger than 2.5 microns.  The detectable range of the sensor is approximately 0 - 8000 pcs/0.01cf.
 
 Connector: [S5B-EH(JST)](http://www.digikey.com/product-detail/en/jst-sales-america-inc/S5B-EH/455-1031-ND/527255)
 
+> Note: The ShinyeiPPD42 draws approximately 90mA.  On a Raspberry Pi, the GPIO 5v pin should be connected to the USB bus and will therefore supply up to 1A minus whatever the RPi draws.  This should allow for proper usage though this needs to be confirmed.  When using an Arduino Uno, the Uno should not be powered over USB as the USB passes through the ATMEGA chip and will therefore not supply enough power.  Use the DC jack with >7v power supply.
+
 ## Credits
-The code is largely derived from the [work by Chris Nafis ](http://www.howmuchsnow.com/arduino/airquality/grovedust/).
+The code is largely derived from the [work by Chris Nafis ](http://www.howmuchsnow.com/arduino/airquality/grovedust/).  Further experiments are posted on the [indiaairquality](https://indiaairquality.com/) blog which have been tremendously useful.
 
 # MIT License
 
